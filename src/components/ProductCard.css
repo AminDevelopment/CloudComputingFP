@@ -1,0 +1,5 @@
+.card-img-top{
+    border-radius: 50%;
+    border: 5px solid rgba(163, 199, 166, 0.5);
+    background-position: center;
+}

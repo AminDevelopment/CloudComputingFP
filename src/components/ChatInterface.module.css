@@ -1,0 +1,29 @@
+.chatContainer {
+    font-family: "Arial", sans-serif; 
+  }
+  
+  .textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+  }
+  
+  .sendMessageButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .sendMessageButton:hover {
+    background-color: #0056b3;
+  }
+  
