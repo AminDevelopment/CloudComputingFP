@@ -1,0 +1,9 @@
+.navbar{
+    font-family: 'Niramit';
+    font-weight: bolder;
+    font-size: x-large;
+    border-bottom: 3px solid #d6d5d5;
+    background-color:rgba(255,255,255,0.9);
+    backdrop-filter: blur(10px);
+    transition: all 0.5s;
+}

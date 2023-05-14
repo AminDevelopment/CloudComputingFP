@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import styles from "./ChatInterface.module.css";
+import Results from "./Results";
+import testJson from "../assets/test.json";
 
 const ChatInterface = () => {
   const [userInput, setUserInput] = useState("");
@@ -15,7 +17,7 @@ const ChatInterface = () => {
     setMessages((prevMessages) => [...prevMessages, { type: "user", text: userInput }]);
   
     const prompt = userInput;
-    const apiKey = "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";
+    const apiKey = "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";
   
     try {
       const response = await fetch("https://api.openai.com/v1/engines/text-davinci-003/completions", {
@@ -44,6 +46,7 @@ const ChatInterface = () => {
     }
   
     setUserInput("");
+
   };
   
 
@@ -61,6 +64,7 @@ const ChatInterface = () => {
           value={userInput}
           onChange={handleChange}
           className={styles.textarea}
+          placeholder="Something wearable and train related..."
         />
         <button type="submit" className={styles.sendMessageButton}>
           Send

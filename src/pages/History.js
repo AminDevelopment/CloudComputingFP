@@ -1,6 +1,13 @@
+import Container from "react-bootstrap/Container";
+import "./History.css";
+
 const History = () => {
     return (
-        <h1>Purchase History</h1>
+        <div className="main">
+            <Container>
+                <p> testing </p>
+            </Container>
+        </div>
     )
 }
 

@@ -4,20 +4,5 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #fafafa;
-
-}
-.title {
-    font-weight: bold;
-    font-size: 5em;
-}
-
-.subtitle {
-    font-style: italic;
-    font-size: 2em;
-}
-
-.searchBar {
-    width: 70%;
-    height: 60px;
-    font-size: 25px;
+    min-height: 100vh;
 }

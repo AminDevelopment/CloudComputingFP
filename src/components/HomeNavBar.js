@@ -1,6 +1,11 @@
 import Container from 'react-bootstrap/Container';
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import "./HomeNavBar.css";
+import Logo from "../assets/logo-new.png";
+import HistoryLogo from "../assets/history-logo-outline.png";
 //import NavDropdown from 'react-bootstrap/NavDropdown';
 import Button from 'react-bootstrap/Button'
 import {
@@ -10,30 +15,50 @@ import {
   Link
 } from "react-router-dom";
 import History from '../pages/History';
-import Login from '../pages/Login';
 import Home from '../pages/Home';
 
 export const HomeNavBar = () => {
   return (
     <Router>
-      <div>
-        <Navbar bg="light" expand="lg" sticky="top">
-          <Container>
-            <Navbar.Brand as={Link} to={"/"}>Slightly Impulsive</Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="me-auto">
-                  <Nav.Link as={Link} to={"/history"}>Past Purchase</Nav.Link>
+      <div style={{fontFamily: 'Niramit'}}>
+        <Navbar className="navbar" bg="light" expand="lg" sticky="top">
+          <Container fluid className ="px-5 mx-5">
+            <Navbar.Brand as={Link} to={"/"}>
+              <img
+                alt=""
+                src={Logo}
+                width="100%"
+                height="100px"
+                className="d-inline-block align-top"
+              />
+            </Navbar.Brand>
+            {/* <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav" className='justify-content-end'> */}
+              <Nav className="justify-content-end">
+                  <Nav.Link as={Link} to={"/history"} className="d-flex">
+                    {/* <Row className="d-inline-flex"> */}
+                      {/* <Col className="d-none d-lg-block p-0"> */}
+                        <img
+                          alt=""
+                          src={HistoryLogo}
+                          width="50%"
+                          height="100px"
+                          className="d-inline-block align-top justify-content-end"
+                        />
+                      {/* </Col>
+                      <Col className="align-self-center flex-start"> */}
+                        <p className="align-self-center pt-3" style={{fontWeight: 'lighter', maxWidth:'140px'}}>
+                          Global History
+                        </p>
+                      {/* </Col>
+                    </Row> */}
+                  </Nav.Link>
               </Nav>
-              <Nav className = "d-inline-flex justify-content-end">
-                <Button as={Link} to={"/login"}>Sign In/Up</Button>
-              </Nav>
-            </Navbar.Collapse>
+            {/* </Navbar.Collapse> */}
           </Container>
         </Navbar>
         <Routes>
           <Route path="/history" element = {<History />} />
-          <Route path="/login" element={<Login />} />
           <Route path="/" element={<Home />}/>
         </Routes>
       </div>

@@ -1,0 +1,84 @@
+{
+    "shopping_results": [
+        {
+        "position": 1,
+        "block_position": "right",
+        "title": "Banana Republic Men's Slim Legacy Jean Medium Wash Size 32W 34L",
+        "price": "$58.00",
+        "extracted_price": 58.0,
+        "link": "https://www.google.com/aclk?sa=l&ai=DChcSEwjc5-yLsP_sAhVM1sAKHdJ4AjQYABAFGgJpbQ&sig=AOD64_1DUpENWnXUhv0PigCNCOo-NQxHPA&ctype=5&q=&ved=2ahUKEwj3muaLsP_sAhWSLc0KHajQBb8Q5bgDegQIChBW&adurl=",
+        "source": "Banana Republic",
+        "rating": 4.7,
+        "reviews": 86,
+        "thumbnail": "<URL to image>",
+        "extensions": [
+            "Sale"
+        ]
+        },
+
+        {
+        "position": 2,
+        "block_position": "right",
+        "title": "Men's Levi's 501 Original Fit Jeans, Size: 34X34, Blue",
+        "price": "$35.70",
+        "extracted_price": 35.7,
+        "link": "https://www.google.com/aclk?sa=l&ai=DChcSEwjc5-yLsP_sAhVM1sAKHdJ4AjQYABAGGgJpbQ&sig=AOD64_34kVp1XGlE-HwsLUmsDwJPbRWUug&ctype=5&q=&ved=2ahUKEwj3muaLsP_sAhWSLc0KHajQBb8Q5bgDegQIChBm&adurl=",
+        "source": "Kohl's",
+        "rating": 4.4,
+        "reviews": 5000,
+        "thumbnail": "<URL to image>",
+        "extensions": [
+            "Sale"
+        ]
+        },
+        
+        {
+        "position": 3,
+        "block_position": "right",
+        "title": "Stretch Lightweight Jean Pants Athletic for Men by Bonobos - Medium Wash - 31X28",
+        "price": "$98.00",
+        "extracted_price": 98.0,
+        "link": "https://www.google.com/aclk?sa=l&ai=DChcSEwjc5-yLsP_sAhVM1sAKHdJ4AjQYABAEGgJpbQ&sig=AOD64_0-p6NnDfM1dm2yik_qgTS24bbB9w&ctype=5&q=&ved=2ahUKEwj3muaLsP_sAhWSLc0KHajQBb8Q5bgDegQIChB2&adurl=",
+        "source": "Bonobos",
+        "rating": 4.5,
+        "reviews": 98,
+        "thumbnail": "<URL to image>"
+        },
+        {
+            "position": 4,
+            "block_position": "right",
+            "title": "Stretch Lightweight Jean Pants Athletic for Men by Bonobos - Medium Wash - 31X28",
+            "price": "$98.00",
+            "extracted_price": 98.0,
+            "link": "https://www.google.com/aclk?sa=l&ai=DChcSEwjc5-yLsP_sAhVM1sAKHdJ4AjQYABAEGgJpbQ&sig=AOD64_0-p6NnDfM1dm2yik_qgTS24bbB9w&ctype=5&q=&ved=2ahUKEwj3muaLsP_sAhWSLc0KHajQBb8Q5bgDegQIChB2&adurl=",
+            "source": "Bonobos",
+            "rating": 4.5,
+            "reviews": 98,
+            "thumbnail": "<URL to image>"
+        },
+        {
+            "position": 4,
+            "block_position": "right",
+            "title": "Stretch Lightweight Jean Pants Athletic for Men by Bonobos - Medium Wash - 31X28",
+            "price": "$98.00",
+            "extracted_price": 98.0,
+            "link": "https://www.google.com/aclk?sa=l&ai=DChcSEwjc5-yLsP_sAhVM1sAKHdJ4AjQYABAEGgJpbQ&sig=AOD64_0-p6NnDfM1dm2yik_qgTS24bbB9w&ctype=5&q=&ved=2ahUKEwj3muaLsP_sAhWSLc0KHajQBb8Q5bgDegQIChB2&adurl=",
+            "source": "Bonobos",
+            "rating": 4.5,
+            "reviews": 98,
+            "thumbnail": "<URL to image>"
+        },
+        {
+            "position": 4,
+            "block_position": "right",
+            "title": "Stretch Lightweight Jean Pants Athletic for Men by Bonobos - Medium Wash - 31X28",
+            "price": "$98.00",
+            "extracted_price": 98.0,
+            "link": "https://www.google.com/aclk?sa=l&ai=DChcSEwjc5-yLsP_sAhVM1sAKHdJ4AjQYABAEGgJpbQ&sig=AOD64_0-p6NnDfM1dm2yik_qgTS24bbB9w&ctype=5&q=&ved=2ahUKEwj3muaLsP_sAhWSLc0KHajQBb8Q5bgDegQIChB2&adurl=",
+            "source": "Bonobos",
+            "rating": 4.5,
+            "reviews": 98,
+            "thumbnail": "<URL to image>"
+        }
+    ]
+}
