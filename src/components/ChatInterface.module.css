@@ -26,4 +26,12 @@
   .sendMessageButton:hover {
     background-color: #0056b3;
   }
+
+  .messageAi{
+    text-align: right;
+  }
+
+  .messageUser {
+    text-align: left;
+  }
   

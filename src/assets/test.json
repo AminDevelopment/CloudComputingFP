@@ -1,84 +1,791 @@
 {
+    "request_info": {
+      "success": true,
+      "credits_used": 1,
+      "credits_used_this_request": 1,
+      "credits_remaining": 19999,
+      "credits_reset_at": "2021-01-01T00:00:00.000Z"
+    },
+    "search_metadata": {
+      "created_at": "2021-01-01T00:00:00.000Z",
+      "processed_at": "2021-01-01T00:00:00.000Z",
+      "total_time_taken": 1.5,
+      "engine_url": "https://www.google.com/search?q=pizza&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&gl=us&hl=en&tbm=shop&tbs=vw:l",
+      "html_url": "https://api.scaleserp.com/search?api_key=APIKEY&q=pizza&location=United+States&search_type=shopping&engine=google&output=html",
+      "json_url": "https://api.scaleserp.com/search?api_key=APIKEY&q=pizza&location=United+States&search_type=shopping&engine=google&output=json",
+      "location_auto_message": "We have automatically set the 'google_domain', 'gl' and 'hl' parameters to match the supplied location of 'United States'. You can stop this behaviour by setting the 'location_auto' parameter to 'false'."
+    },
+    "search_parameters": {
+      "search_type": "shopping",
+      "location": "United States",
+      "q": "pizza",
+      "engine": "google"
+    },
+    "search_information": {
+      "original_query_yields_zero_results": false,
+      "query_displayed": "pizza"
+    },
     "shopping_results": [
-        {
-        "position": 1,
-        "block_position": "right",
-        "title": "Banana Republic Men's Slim Legacy Jean Medium Wash Size 32W 34L",
-        "price": "$58.00",
-        "extracted_price": 58.0,
-        "link": "https://www.google.com/aclk?sa=l&ai=DChcSEwjc5-yLsP_sAhVM1sAKHdJ4AjQYABAFGgJpbQ&sig=AOD64_1DUpENWnXUhv0PigCNCOo-NQxHPA&ctype=5&q=&ved=2ahUKEwj3muaLsP_sAhWSLc0KHajQBb8Q5bgDegQIChBW&adurl=",
-        "source": "Banana Republic",
-        "rating": 4.7,
-        "reviews": 86,
-        "thumbnail": "<URL to image>",
-        "extensions": [
-            "Sale"
-        ]
-        },
-
-        {
-        "position": 2,
-        "block_position": "right",
-        "title": "Men's Levi's 501 Original Fit Jeans, Size: 34X34, Blue",
-        "price": "$35.70",
-        "extracted_price": 35.7,
-        "link": "https://www.google.com/aclk?sa=l&ai=DChcSEwjc5-yLsP_sAhVM1sAKHdJ4AjQYABAGGgJpbQ&sig=AOD64_34kVp1XGlE-HwsLUmsDwJPbRWUug&ctype=5&q=&ved=2ahUKEwj3muaLsP_sAhWSLc0KHajQBb8Q5bgDegQIChBm&adurl=",
-        "source": "Kohl's",
-        "rating": 4.4,
-        "reviews": 5000,
-        "thumbnail": "<URL to image>",
-        "extensions": [
-            "Sale"
-        ]
-        },
-        
-        {
-        "position": 3,
-        "block_position": "right",
-        "title": "Stretch Lightweight Jean Pants Athletic for Men by Bonobos - Medium Wash - 31X28",
-        "price": "$98.00",
-        "extracted_price": 98.0,
-        "link": "https://www.google.com/aclk?sa=l&ai=DChcSEwjc5-yLsP_sAhVM1sAKHdJ4AjQYABAEGgJpbQ&sig=AOD64_0-p6NnDfM1dm2yik_qgTS24bbB9w&ctype=5&q=&ved=2ahUKEwj3muaLsP_sAhWSLc0KHajQBb8Q5bgDegQIChB2&adurl=",
-        "source": "Bonobos",
+      {
+        "title": "Red Baron Pizza, Pepperoni, Classic Crust - 20.60 oz",
+        "id": "11954905487649949447",
+        "link": "https://www.google.com/shopping/product/11954905487649949447",
         "rating": 4.5,
-        "reviews": 98,
-        "thumbnail": "<URL to image>"
+        "reviews": 2366,
+        "price": 4.69,
+        "price_raw": "$4.69",
+        "price_parsed": {
+          "symbol": "$",
+          "value": 4.69,
+          "currency": "USD",
+          "raw": "$4.69"
+        },
+        "merchant": "Publix Delivery",
+        "snippet": "RED BARON - Calm mealtime chaos with the pizza the whole family loves! One bite into this pepperoni pizza and you’ll savor the ...",
+        "extensions": [
+          "Red Baron",
+          "Pizza",
+          "Frozen",
+          "Meat"
+        ],
+        "delivery": "Delivery by today",
+        "has_compare_prices": true,
+        "merchant_count": 3,
+        "image": "data:image/jpeg;base64,<Base64 image data>",
+        "position": 1,
+        "has_product_page": true
+      },
+      {
+        "title": "Cheese & Pepperoni Pizza'nada - Pack of 8",
+        "link": "https://www.google.com/aclk?sa=L&ai=DChcSEwiJtPaJ-NjzAhUXqMgKHeEuB44YABAEGgJxdQ&sig=AOD64_07Xv1-YqwSEzEg8ilSmmvNa8jzzw&ctype=5&q=&ved=0ahUKEwjrt-6J-NjzAhUlJjQIHYRdA6EQ2CkIoQQ&adurl=",
+        "price": 67.95,
+        "price_raw": "$67.95",
+        "price_parsed": {
+          "symbol": "$",
+          "value": 67.95,
+          "currency": "USD",
+          "raw": "$67.95"
+        },
+        "merchant": "Brazi Bites",
+        "extensions": [
+          "Pizza",
+          "Fresh",
+          "Gluten-free",
+          "Meat"
+        ],
+        "snippet": "The perfect blend of everything you love about fresh pizza crafted into handheld pockets of gluten-free goodness. We’re ...",
+        "delivery": "Free delivery by Mon, Nov 15",
+        "has_compare_prices": false,
+        "id": "891303163530767993",
+        "image": "data:image/jpeg;base64,<Base64 image data>",
+        "position": 2,
+        "has_product_page": false
+      },
+      {
+        "title": "Regina Pizzeria - Pepperoni Pizza - 4 Pack",
+        "link": "https://www.google.com/aclk?sa=L&ai=DChcSEwiJtPaJ-NjzAhUXqMgKHeEuB44YABAFGgJxdQ&sig=AOD64_1Z9tby9RS9aL1ucW6j7gzkJVznpQ&ctype=5&q=&ved=0ahUKEwjrt-6J-NjzAhUlJjQIHYRdA6EQ2CkIsQQ&adurl=",
+        "price": 109,
+        "price_raw": "$109.00",
+        "price_parsed": {
+          "symbol": "$",
+          "value": 109,
+          "currency": "USD",
+          "raw": "$109.00"
+        },
+        "merchant": "Goldbelly",
+        "extensions": [
+          "Pizza",
+          "Fresh",
+          "Meat"
+        ],
+        "snippet": "Regina Pizzeria ships its famous pizza nationwide on Goldbelly! Regina Pizzeria has been a staple of the Boston food scene ...",
+        "delivery": "Free delivery",
+        "has_compare_prices": false,
+        "id": "10792145992605782140",
+        "image": "data:image/jpeg;base64,<Base64 image data>",
+        "position": 3,
+        "has_product_page": false
+      },
+      {
+        "title": "Large Pizzas, Set of 3 | Williams Sonoma",
+        "link": "https://www.google.com/aclk?sa=L&ai=DChcSEwiJtPaJ-NjzAhUXqMgKHeEuB44YABAGGgJxdQ&sig=AOD64_1pl_oHPuc1h-fy7fwvP_IzbJsJZQ&ctype=5&q=&ved=0ahUKEwjrt-6J-NjzAhUlJjQIHYRdA6EQ2CkIwAQ&adurl=",
+        "price": 139.95,
+        "price_raw": "$139.95",
+        "price_parsed": {
+          "symbol": "$",
+          "value": 139.95,
+          "currency": "USD",
+          "raw": "$139.95"
+        },
+        "merchant": "Williams-Sonoma",
+        "snippet": "It's easy to serve delicious gourmet pizza with our ready-to-bake pies in three crowd-pleasing flavors. Prepared with rustic ...",
+        "delivery": "$16.99 delivery",
+        "has_compare_prices": false,
+        "id": "12784477481557065406",
+        "image": "data:image/jpeg;base64,<Base64 image data>",
+        "position": 4,
+        "has_product_page": false
+      },
+      {
+        "title": "Mr Sips Gluten Free Pepperoni Pizza, 6 inch - 24 per Pack - 1 each.",
+        "id": "15510711243718040276",
+        "link": "https://www.google.com/shopping/product/15510711243718040276",
+        "price": 93.95,
+        "price_raw": "$93.95",
+        "price_parsed": {
+          "symbol": "$",
+          "value": 93.95,
+          "currency": "USD",
+          "raw": "$93.95"
+        },
+        "merchant": "Foodservicedirect.com",
+        "extensions": [
+          "Pizza",
+          "Fresh",
+          "Gluten-free",
+          "Meat"
+        ],
+        "delivery": "Delivery by Thu, Nov 4",
+        "has_compare_prices": true,
+        "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTc6QSGqniDCejOvTuxEYP61IQv08azn49XNxtFvVXDGLwjdDq61tZtyhW696hJgYXFWEVmq6DB&usqp=CAE",
+        "position": 5,
+        "has_product_page": true
+      },
+      {
+        "title": "Oscar Mayer Lunchables, Pizza with Pepperoni - 4.5 oz tray",
+        "id": "579702613415295670",
+        "link": "https://www.google.com/shopping/product/579702613415295670",
+        "rating": 4.5,
+        "reviews": 4009,
+        "price": 2.39,
+        "price_raw": "$2.39",
+        "price_parsed": {
+          "symbol": "$",
+          "value": 2.39,
+          "currency": "USD",
+          "raw": "$2.39"
+        },
+        "merchant": "Instacart",
+        "snippet": "Lunchables Lunch Combinations Pizza With Pepperoni are the perfect choice for an on the go lunch, while letting kids have fun ...",
+        "extensions": [
+          "Lunchables",
+          "Pizza",
+          "Fresh",
+          "Meat",
+          "Lunch Packs"
+        ],
+        "delivery": "Delivery by today",
+        "has_compare_prices": true,
+        "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTlM8CLyp5e2crQ0eZ2IYaKDL7Kh8xgxPVDivTtii2tnO1aXzlt00Yq0DixCIh9lnzUhvnKq6c&usqp=CAE",
+        "position": 6,
+        "has_product_page": true
+      },
+      {
+        "title": "Imo's Pizza - Imo's Pizza 4 Pack",
+        "link": "https://www.google.com/aclk?sa=L&ai=DChcSEwiJtPaJ-NjzAhUXqMgKHeEuB44YABAMGgJxdQ&sig=AOD64_0gBC0qvVWFWvlDnMEb-B2BXNQLyg&ctype=5&q=&ved=0ahUKEwjrt-6J-NjzAhUlJjQIHYRdA6EQ2CkI9QQ&adurl=",
+        "price": 71.4,
+        "price_raw": "$71.40",
+        "price_parsed": {
+          "symbol": "$",
+          "value": 71.4,
+          "currency": "USD",
+          "raw": "$71.40"
+        },
+        "merchant": "Goldbelly",
+        "extensions": [
+          "Pizza",
+          "Fresh",
+          "Thin Crust"
+        ],
+        "snippet": "The \"Square Beyond Compare.\" It's not just a tag line as Imo's Pizza has been the gold standard in St. Louis-style pizza since ...",
+        "delivery": "Free delivery",
+        "has_compare_prices": false,
+        "id": "7666239534472557954",
+        "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRhbPs_2CkfVSpi4PLcfjP0G880kjFoo3F3GMk3YBtSOVD4N6WG8O9_RKlBHMA&usqp=CAE",
+        "position": 7,
+        "has_product_page": false
+      },
+      {
+        "title": "Kasa's Pizza 24 Slice Sicilian Pan Regular Crust Cheese Pizza ,Red",
+        "link": "https://www.google.com/aclk?sa=L&ai=DChcSEwiJtPaJ-NjzAhUXqMgKHeEuB44YABAOGgJxdQ&sig=AOD64_2fLsnh3dN6Po3en5L9Rwi_nrhKTg&ctype=5&q=&ved=0ahUKEwjrt-6J-NjzAhUlJjQIHYRdA6EQ2CkIhAU&adurl=",
+        "price": 134.53,
+        "price_raw": "$134.53",
+        "price_parsed": {
+          "symbol": "$",
+          "value": 134.53,
+          "currency": "USD",
+          "raw": "$134.53"
+        },
+        "merchant": "QVC.com",
+        "extensions": [
+          "Pizza",
+          "Fresh",
+          "Cheese",
+          "Vegetarian"
+        ],
+        "snippet": "Need a quick, easy meal for the entire family (or just for one picky eater)? This Sicilian pan cheese pizza is ready to eat in ...",
+        "delivery": "Free delivery",
+        "has_compare_prices": false,
+        "id": "1022094653046839046",
+        "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQkvGxOF7jobOxR8Y1_HJlEYjLpMSnKsyTPfmendrSX42Dt5cFjQyjYOHDevUk&usqp=CAE",
+        "position": 8,
+        "has_product_page": false
+      },
+      {
+        "title": "Cheese Pizza (4 or 8 pack)",
+        "link": "https://www.google.com/aclk?sa=L&ai=DChcSEwiJtPaJ-NjzAhUXqMgKHeEuB44YABAUGgJxdQ&sig=AOD64_2nQ8wO1lTUgrkajWge1bbEza9VYQ&ctype=5&q=&ved=0ahUKEwjrt-6J-NjzAhUlJjQIHYRdA6EQ2CkIlAU&adurl=",
+        "price": 79.99,
+        "price_raw": "$79.99",
+        "price_parsed": {
+          "symbol": "$",
+          "value": 79.99,
+          "currency": "USD",
+          "raw": "$79.99"
+        },
+        "merchant": "CincyFavorites.com",
+        "extensions": [
+          "Pizza",
+          "Frozen",
+          "Cheese",
+          "Vegetarian"
+        ],
+        "snippet": "Available in packs of 4 or 8 Medium Cheese PizzasIt'll be like you called '347-1111' and hit the jackpot! Yes, we do deliver ...",
+        "delivery": "$20.97 delivery",
+        "has_compare_prices": false,
+        "id": "8713094650963497588",
+        "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTDjWZzYG4xD41S_usn5_OJu7UMH04YxqZqu5Sim6iTHAkth9zxZCdLtUtx7zHNDXbtxRB7Epm-&usqp=CAE",
+        "position": 9,
+        "has_product_page": false
+      },
+      {
+        "title": "Pizza Notebook | pizza",
+        "link": "https://www.google.com/aclk?sa=L&ai=DChcSEwiJtPaJ-NjzAhUXqMgKHeEuB44YABAWGgJxdQ&sig=AOD64_2beFVIJON4mWVkXpI3ccBxO87nnw&ctype=5&q=&ved=0ahUKEwjrt-6J-NjzAhUlJjQIHYRdA6EQ2CkIpAU&adurl=",
+        "price": 20,
+        "price_raw": "$20.00",
+        "price_parsed": {
+          "symbol": "$",
+          "value": 20,
+          "currency": "USD",
+          "raw": "$20.00"
+        },
+        "merchant": "TeePublic",
+        "snippet": "Your favorite food is pizza? Do you love pizzas and therefore like to go to Italian restaurants for pizza? Perfect gift idea ...",
+        "delivery": "Delivery by Mon, Nov 1",
+        "has_compare_prices": false,
+        "id": "12378319502948381388",
+        "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSXduOBVkwHeSlmCFUSJZiipCeWoRAN1sG0Ua88NKQPdA5F7hCHznKG5eAAzj0VDiUH-KbbqDRIaA&usqp=CAE",
+        "position": 10,
+        "has_product_page": false
+      },
+      {
+        "title": "Sabatassos Pizza Singles, Pepperoni/Four-Cheese, 12 Pack - 12 pizzas, 43.98 oz",
+        "link": "https://www.google.com/aclk?sa=L&ai=DChcSEwiJtPaJ-NjzAhUXqMgKHeEuB44YABAVGgJxdQ&sig=AOD64_2KOrUU5llVZOXKKuJVHw8ZL5nZww&ctype=5&q=&ved=0ahUKEwjrt-6J-NjzAhUlJjQIHYRdA6EQ2CkIsgU&adurl=",
+        "rating": 4.5,
+        "reviews": 13,
+        "price": 12.43,
+        "price_raw": "$12.43",
+        "price_parsed": {
+          "symbol": "$",
+          "value": 12.43,
+          "currency": "USD",
+          "raw": "$12.43"
+        },
+        "merchant": "Instacart",
+        "snippet": "From the Sabatasso's Pizzeria. Enjoy our delectable thin and crispy crust topped with perfectly seasoned sauce, real cheese ...",
+        "extensions": [
+          "Pizza",
+          "Meat",
+          "Thin Crust",
+          "Personal Size"
+        ],
+        "delivery": "Delivery by today",
+        "has_compare_prices": false,
+        "id": "12313792800202703867",
+        "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRIJVZTVrrNZU20uOnqXKAAlNPHVywVYuadnD1mnzdTpn0kKNm3dRKxF5Mvvg&usqp=CAE",
+        "position": 11,
+        "has_product_page": false
+      },
+      {
+        "title": "Lou Malnati's Pizza - 6 Lou Malnati's Deep Dish Pizzas",
+        "link": "https://www.google.com/aclk?sa=L&ai=DChcSEwiJtPaJ-NjzAhUXqMgKHeEuB44YABAXGgJxdQ&sig=AOD64_2ldjIU-qeGD8h4EOXAlqciuqMcFQ&ctype=5&q=&ved=0ahUKEwjrt-6J-NjzAhUlJjQIHYRdA6EQ2CkIwwU&adurl=",
+        "price": 99.99,
+        "price_raw": "$99.99",
+        "price_parsed": {
+          "symbol": "$",
+          "value": 99.99,
+          "currency": "USD",
+          "raw": "$99.99"
+        },
+        "merchant": "Goldbelly",
+        "extensions": [
+          "Pizza",
+          "Fresh",
+          "Deep Dish"
+        ],
+        "snippet": "Lou Malnati's ships its award-winning pizzas nationwide on Goldbelly! Lou Malnati's legendary pizzas are hand-made from ...",
+        "delivery": "Free delivery",
+        "has_compare_prices": false,
+        "id": "7168569049563555426",
+        "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRENlMYgNA1o6AdeZqWB9Tz4ulCVIlVtpKIjBPta6IGyAa12Jc-aHUOb5LGRvs&usqp=CAE",
+        "position": 12,
+        "has_product_page": false
+      },
+      {
+        "title": "Pepperoni Pizza",
+        "id": "7179841165654981507",
+        "link": "https://www.google.com/shopping/product/7179841165654981507",
+        "price": 7.99,
+        "price_raw": "$7.99",
+        "price_parsed": {
+          "symbol": "$",
+          "value": 7.99,
+          "currency": "USD",
+          "raw": "$7.99"
+        },
+        "merchant": "Gopuff",
+        "extensions": [
+          "Pizza",
+          "Fresh",
+          "Meat"
+        ],
+        "delivery": "Delivery by today",
+        "has_compare_prices": true,
+        "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRLnRoh17iDrEKMQplistOnrDPIGT49af_8JfvWsbo9XTafO0LuOnLHBCODWBVnJ6wTVPqAzVh3&usqp=CAE",
+        "position": 13,
+        "has_product_page": true
+      },
+      {
+        "title": "Hot Pockets Four Cheese Pizza",
+        "link": "https://www.google.com/aclk?sa=L&ai=DChcSEwiJtPaJ-NjzAhUXqMgKHeEuB44YABAdGgJxdQ&sig=AOD64_2RGrfoGr75hq-QFSfj3vIOKKkNjA&ctype=5&q=&ved=0ahUKEwjrt-6J-NjzAhUlJjQIHYRdA6EQ2CkI5AU&adurl=",
+        "price": 89.95,
+        "price_raw": "$89.95",
+        "price_parsed": {
+          "symbol": "$",
+          "value": 89.95,
+          "currency": "USD",
+          "raw": "$89.95"
+        },
+        "merchant": "Foodservicedirect.com",
+        "extensions": [
+          "Hot Pockets",
+          "Pizza",
+          "Fresh",
+          "Cheese",
+          "Vegetarian"
+        ],
+        "snippet": "Made with a delicious blend of parmesan, cheddar, provolone and mozzarella cheeses in a garlic buttery crust, the Hot Pockets ...",
+        "delivery": "Delivery by Thu, Nov 4",
+        "has_compare_prices": false,
+        "id": "15731595170224662333",
+        "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRl_fg0wlSzj5q5VZJ8ldwDJDV9wRvLsiIk3S5C4G7rMqIhC5XgjQIr-fpbkC5V9_RhFWEOol8&usqp=CAE",
+        "position": 14,
+        "has_product_page": false
+      },
+      {
+        "title": "Mini Pizzas, Set of 6 | Williams Sonoma",
+        "link": "https://www.google.com/aclk?sa=L&ai=DChcSEwiJtPaJ-NjzAhUXqMgKHeEuB44YABAeGgJxdQ&sig=AOD64_0ALJnDfhlInfObmOKDiJuno-_vXQ&ctype=5&q=&ved=0ahUKEwjrt-6J-NjzAhUlJjQIHYRdA6EQ2CkI9QU&adurl=",
+        "price": 129.95,
+        "price_raw": "$129.95",
+        "price_parsed": {
+          "symbol": "$",
+          "value": 129.95,
+          "currency": "USD",
+          "raw": "$129.95"
+        },
+        "merchant": "Williams-Sonoma",
+        "snippet": "It's easy to serve delicious gourmet pizza with our ready-to-bake pies in six classic flavors. Prepared with rustic dough ...",
+        "delivery": "$16.99 delivery",
+        "has_compare_prices": false,
+        "id": "5515289476614264294",
+        "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTtWEeFnyv9oPEHnhw6E8jhLXXJsiYwCrmFktDoW1oTrVvJVL0D22fgFl3YMA&usqp=CAE",
+        "position": 15,
+        "has_product_page": false
+      },
+      {
+        "title": "Bosco's 7\" Deep Dish Cheese Pizza - 36/Case",
+        "link": "https://www.google.com/aclk?sa=L&ai=DChcSEwiJtPaJ-NjzAhUXqMgKHeEuB44YABAhGgJxdQ&sig=AOD64_0wILrFnnrI-JE9bso0laQ0fxVtPw&ctype=5&q=&ved=0ahUKEwjrt-6J-NjzAhUlJjQIHYRdA6EQ2CkIgwY&adurl=",
+        "rating": 5,
+        "reviews": 1,
+        "price": 72.49,
+        "price_raw": "$72.49",
+        "price_parsed": {
+          "symbol": "$",
+          "value": 72.49,
+          "currency": "USD",
+          "raw": "$72.49"
+        },
+        "merchant": "WebstaurantStore.com",
+        "snippet": "Offer guests a mouthwatering treat by serving this Bosco 7\" deep dish cheese pizza. Featuring a delicious blend of slightly ...",
+        "extensions": [
+          "Pizza",
+          "Frozen",
+          "Cheese",
+          "Deep Dish",
+          "Vegetarian"
+        ],
+        "delivery": "$114.56 delivery",
+        "has_compare_prices": false,
+        "id": "7459219268884147509",
+        "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR80udjN3rRWxKUDWJzKpeA9E1kHijpumJXBpZbHmXZsY-UEFSFSGO8w0jTFcJJaBMqJYS3stnm&usqp=CAE",
+        "position": 16,
+        "has_product_page": false
+      },
+      {
+        "title": "Paesan’s Pizza - Classic Cheese Pizza - 5 Pack",
+        "link": "https://www.google.com/aclk?sa=L&ai=DChcSEwiJtPaJ-NjzAhUXqMgKHeEuB44YABAkGgJxdQ&sig=AOD64_0GeZ7LYBRAX7pmoakQCeX5d76iSQ&ctype=5&q=&ved=0ahUKEwjrt-6J-NjzAhUlJjQIHYRdA6EQ2CkIlQY&adurl=",
+        "price": 79,
+        "price_raw": "$79.00",
+        "price_parsed": {
+          "symbol": "$",
+          "value": 79,
+          "currency": "USD",
+          "raw": "$79.00"
+        },
+        "merchant": "Goldbelly",
+        "extensions": [
+          "Pizza",
+          "Fresh",
+          "Cheese",
+          "Vegetarian"
+        ],
+        "snippet": "Paesan’s Pizza has been in business since 1994. Their Brooklyn style pizza is crispy on the outside and chewy on the inside ...",
+        "delivery": "Free delivery",
+        "has_compare_prices": false,
+        "id": "2651875049462026994",
+        "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQc2hY-Czi50owErBi7XWStFmSYejWkG55CaBGkzwvEaED7q0qcJhzF7tKQjg&usqp=CAE",
+        "position": 17,
+        "has_product_page": false
+      },
+      {
+        "title": "The Max Pepperoni Pizza",
+        "id": "3979426303360082447",
+        "link": "https://www.google.com/shopping/product/3979426303360082447",
+        "price": 96.95,
+        "price_raw": "$96.95",
+        "price_parsed": {
+          "symbol": "$",
+          "value": 96.95,
+          "currency": "USD",
+          "raw": "$96.95"
+        },
+        "merchant": "Foodservicedirect.com",
+        "extensions": [
+          "Pizza",
+          "Frozen",
+          "Breakfast",
+          "Meat"
+        ],
+        "snippet": "The Conagra The Max Pepperoni Pizza is a delicious breakfast or meal option. Made with 51% whole grain, this pre-portioned ...",
+        "delivery": "Delivery by Thu, Nov 4",
+        "has_compare_prices": true,
+        "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRYPNd9d_23rY2FmEq6KJ5TmTeOff_9dCsheRfPa431xqoDJtlHPZ54EVXD-qgOGoK51-bb8G7n&usqp=CAE",
+        "position": 18,
+        "has_product_page": true
+      },
+      {
+        "title": "Organic Mushroom & Cheese Pizza - Alex's Awesome Sourdough - 1 count",
+        "link": "https://www.google.com/aclk?sa=L&ai=DChcSEwiJtPaJ-NjzAhUXqMgKHeEuB44YABAmGgJxdQ&sig=AOD64_2o_lVHQs7iKieQOzh7j3QVSJIUfA&ctype=5&q=&ved=0ahUKEwjrt-6J-NjzAhUlJjQIHYRdA6EQ2CkItgY&adurl=",
+        "price": 9.99,
+        "price_raw": "$9.99",
+        "price_parsed": {
+          "symbol": "$",
+          "value": 9.99,
+          "currency": "USD",
+          "raw": "$9.99"
+        },
+        "merchant": "Good Eggs",
+        "extensions": [
+          "Pizza",
+          "Frozen",
+          "Cheese",
+          "Vegetarian",
+          "Organic"
+        ],
+        "snippet": "A naturally leavened sourdough crust gives Alex's Awesome Sourdough Organic Mushroom & Cheese Pizza a fantastic texture and a ...",
+        "delivery": "+Shipping",
+        "has_compare_prices": false,
+        "id": "14209441234083437505",
+        "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcT8HyrM6uzv48xWiXqe8A9q63hsXfMNruohTSLK_PPKhRaQNzDmdS8leaEef7Um_zNlfoTy3seZ&usqp=CAE",
+        "position": 19,
+        "has_product_page": false
+      },
+      {
+        "title": "Imo's Pizza - Imo's Pizza - 12 Pack",
+        "link": "https://www.google.com/aclk?sa=L&ai=DChcSEwiJtPaJ-NjzAhUXqMgKHeEuB44YABAoGgJxdQ&sig=AOD64_3gwQp6eM1AEMAMGenxRgWsag1LWw&ctype=5&q=&ved=0ahUKEwjrt-6J-NjzAhUlJjQIHYRdA6EQ2CkIxwY&adurl=",
+        "price": 161,
+        "price_raw": "$161.00",
+        "price_parsed": {
+          "symbol": "$",
+          "value": 161,
+          "currency": "USD",
+          "raw": "$161.00"
+        },
+        "merchant": "Goldbelly",
+        "extensions": [
+          "Pizza",
+          "Fresh",
+          "Thin Crust"
+        ],
+        "snippet": "The \"Square Beyond Compare.\" It's not just a tag line as Imo's Pizza has been the gold standard in St. Louis-style pizza since ...",
+        "delivery": "Free delivery",
+        "has_compare_prices": false,
+        "id": "8936125733596148726",
+        "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTANamCcmgN08W-wuPbW_YcA3CQGl1q2VSsF0B9eOvWCVK8q0e7D1rlm0romNo&usqp=CAE",
+        "position": 20,
+        "has_product_page": false
+      }
+    ],
+    "filters": [
+      {
+        "name": "Show only",
+        "values": [
+          {
+            "name": "Buy on Google",
+            "value": "vw:l,mr:1,cat:499988,buy:g,init_ar:SgZKBAiUwh5KClIICKylOyCxpTs="
+          },
+          {
+            "name": "On sale",
+            "value": "vw:l,mr:1,cat:499988,sales:1,init_ar:SgZKBAiUwh5KClIICKylOyCxpTs="
+          },
+          {
+            "name": "Smaller stores",
+            "value": "vw:l,mr:1,cat:499988,smb:1,init_ar:SgZKBAiUwh5KClIICKylOyCxpTs="
+          }
+        ]
+      },
+      {
+        "name": "Price",
+        "values": [
+          {
+            "name": "Up to $25",
+            "value": "vw:l,mr:1,cat:499988,price:1,ppr_max:25,init_ar:SgZKBAiUwh5KClIICKylOyCxpTs="
+          },
+          {
+            "name": "$25 – $70",
+            "value": "vw:l,mr:1,cat:499988,price:1,ppr_min:25,ppr_max:70,init_ar:SgZKBAiUwh5KClIICKylOyCxpTs="
+          },
+          {
+            "name": "Over $70",
+            "value": "vw:l,mr:1,cat:499988,price:1,ppr_min:70,init_ar:SgZKBAiUwh5KClIICKylOyCxpTs="
+          }
+        ]
+      },
+      {
+        "name": "Meat Type",
+        "values": [
+          {
+            "name": "Chicken",
+            "value": "vw:l,mr:1,cat:499988,pdtr0:987106|2831475,init_ar:SgZKBAiUwh5KClIICKylOyCxpTs="
+          },
+          {
+            "name": "Beef",
+            "value": "vw:l,mr:1,cat:499988,pdtr0:987106|987107,init_ar:SgZKBAiUwh5KClIICKylOyCxpTs="
+          },
+          {
+            "name": "Turkey",
+            "value": "vw:l,mr:1,cat:499988,pdtr0:987106|2831476,init_ar:SgZKBAiUwh5KClIICKylOyCxpTs="
+          },
+          {
+            "name": "Pork",
+            "value": "vw:l,mr:1,cat:499988,pdtr0:987106|2831477,init_ar:SgZKBAiUwh5KClIICKylOyCxpTs="
+          }
+        ]
+      },
+      {
+        "name": "Brand",
+        "values": [
+          {
+            "name": "Red Baron",
+            "value": "vw:l,mr:1,cat:499988,pdtr0:971231|971344,init_ar:SgZKBAiUwh5KClIICKylOyCxpTs="
+          },
+          {
+            "name": "California Pizza Kitchen",
+            "value": "vw:l,mr:1,cat:499988,pdtr0:971231|971335,init_ar:SgZKBAiUwh5KClIICKylOyCxpTs="
+          },
+          {
+            "name": "Tony's",
+            "value": "vw:l,mr:1,cat:499988,pdtr0:971231|971406,init_ar:SgZKBAiUwh5KClIICKylOyCxpTs="
+          },
+          {
+            "name": "DiGiorno",
+            "value": "vw:l,mr:1,cat:499988,pdtr0:971231|971338,init_ar:SgZKBAiUwh5KClIICKylOyCxpTs="
+          },
+          {
+            "name": "Lunchables",
+            "value": "vw:l,mr:1,cat:499988,pdtr0:971231|971410,init_ar:SgZKBAiUwh5KClIICKylOyCxpTs="
+          },
+          {
+            "name": "Hot Pockets",
+            "value": "vw:l,mr:1,cat:499988,pdtr0:971231|971339,init_ar:SgZKBAiUwh5KClIICKylOyCxpTs="
+          },
+          {
+            "name": "American Flatbread",
+            "value": "vw:l,mr:1,cat:499988,pdtr0:971231|4237701,init_ar:SgZKBAiUwh5KClIICKylOyCxpTs="
+          }
+        ]
+      },
+      {
+        "name": "Fresh / Frozen",
+        "values": [
+          {
+            "name": "Fresh",
+            "value": "vw:l,mr:1,cat:499988,pdtr0:985775|985776,init_ar:SgZKBAiUwh5KClIICKylOyCxpTs="
+          },
+          {
+            "name": "Frozen",
+            "value": "vw:l,mr:1,cat:499988,pdtr0:985775|985777,init_ar:SgZKBAiUwh5KClIICKylOyCxpTs="
+          }
+        ]
+      },
+      {
+        "name": "Pizza Crust Style",
+        "values": [
+          {
+            "name": "Thin Crust",
+            "value": "vw:l,mr:1,cat:499988,pdtr0:4043988|4043991,init_ar:SgZKBAiUwh5KClIICKylOyCxpTs="
+          },
+          {
+            "name": "Deep Dish",
+            "value": "vw:l,mr:1,cat:499988,pdtr0:4043988|4043992,init_ar:SgZKBAiUwh5KClIICKylOyCxpTs="
+          },
+          {
+            "name": "Flatbread",
+            "value": "vw:l,mr:1,cat:499988,pdtr0:4043988|4043989,init_ar:SgZKBAiUwh5KClIICKylOyCxpTs="
+          },
+          {
+            "name": "French Bread",
+            "value": "vw:l,mr:1,cat:499988,pdtr0:4043988|4043990,init_ar:SgZKBAiUwh5KClIICKylOyCxpTs="
+          }
+        ]
+      },
+      {
+        "name": "Pizza Type",
+        "values": [
+          {
+            "name": "Meat",
+            "value": "vw:l,mr:1,cat:499988,pdtr0:986325|986327,init_ar:SgZKBAiUwh5KClIICKylOyCxpTs="
+          },
+          {
+            "name": "Cheese",
+            "value": "vw:l,mr:1,cat:499988,pdtr0:986325|986326,init_ar:SgZKBAiUwh5KClIICKylOyCxpTs="
+          },
+          {
+            "name": "Vegetable",
+            "value": "vw:l,mr:1,cat:499988,pdtr0:986325|986328,init_ar:SgZKBAiUwh5KClIICKylOyCxpTs="
+          }
+        ]
+      },
+      {
+        "name": "Fat Content",
+        "values": [
+          {
+            "name": "Low Fat",
+            "value": "vw:l,mr:1,cat:499988,pdtr0:2432349|2432350,init_ar:SgZKBAiUwh5KClIICKylOyCxpTs="
+          },
+          {
+            "name": "Fat Free",
+            "value": "vw:l,mr:1,cat:499988,pdtr0:2432349|2432352,init_ar:SgZKBAiUwh5KClIICKylOyCxpTs="
+          }
+        ]
+      },
+      {
+        "name": "Features",
+        "values": [
+          {
+            "name": "Vegetarian",
+            "value": "vw:l,mr:1,cat:499988,pdtr0:986391|986392,init_ar:SgZKBAiUwh5KClIICKylOyCxpTs="
+          },
+          {
+            "name": "Gluten-free",
+            "value": "vw:l,mr:1,cat:499988,pdtr0:971430|971431,init_ar:SgZKBAiUwh5KClIICKylOyCxpTs="
+          },
+          {
+            "name": "Vegan",
+            "value": "vw:l,mr:1,cat:499988,pdtr0:2758732|2758733,init_ar:SgZKBAiUwh5KClIICKylOyCxpTs="
+          },
+          {
+            "name": "Breakfast",
+            "value": "vw:l,mr:1,cat:499988,pdtr0:2481370|2481371,init_ar:SgZKBAiUwh5KClIICKylOyCxpTs="
+          },
+          {
+            "name": "Personal Size",
+            "value": "vw:l,mr:1,cat:499988,pdtr0:986336|986337,init_ar:SgZKBAiUwh5KClIICKylOyCxpTs="
+          },
+          {
+            "name": "Organic",
+            "value": "vw:l,mr:1,cat:499988,pdtr0:971427|971428,init_ar:SgZKBAiUwh5KClIICKylOyCxpTs="
+          }
+        ]
+      },
+      {
+        "name": "Shipping",
+        "values": [
+          {
+            "name": "Free shipping",
+            "value": "vw:l,mr:1,cat:499988,ship:1,init_ar:SgZKBAiUwh5KClIICKylOyCxpTs="
+          }
+        ]
+      },
+      {
+        "name": "Product rating",
+        "values": [
+          {
+            "name": "4 and up",
+            "value": "vw:l,mr:1,cat:499988,avg_rating:400,init_ar:SgZKBAiUwh5KClIICKylOyCxpTs="
+          }
+        ]
+      },
+      {
+        "name": "Seller",
+        "values": [
+          {
+            "name": "eBay",
+            "value": "vw:l,mr:1,cat:499988,merchagg:g6296794,init_ar:SgZKBAiUwh5KClIICKylOyCxpTs="
+          },
+          {
+            "name": "Foodservicedirect.com",
+            "value": "vw:l,mr:1,cat:499988,merchagg:m16189,init_ar:SgZKBAiUwh5KClIICKylOyCxpTs="
+          },
+          {
+            "name": "Goldbelly",
+            "value": "vw:l,mr:1,cat:499988,merchagg:m100263440,init_ar:SgZKBAiUwh5KClIICKylOyCxpTs="
+          },
+          {
+            "name": "Gopuff",
+            "value": "vw:l,mr:1,cat:499988,merchagg:m134889861|m305163472,init_ar:SgZKBAiUwh5KClIICKylOyCxpTs="
+          },
+          {
+            "name": "Rebel Smuggling Galactic Emporium",
+            "value": "vw:l,mr:1,cat:499988,merchagg:m123262447,init_ar:SgZKBAiUwh5KClIICKylOyCxpTs="
+          }
+        ]
+      }
+    ],
+    "pagination": {
+      "current": 1,
+      "next": "https://www.google.com/search?q=pizza&gl=us&hl=en&tbs=vw:l,cat:499988,init_ar:SgZKBAiUwh5KClIICKylOyCxpTs%3D,ss:44&tbm=shop&ei=iQRwYavPIKXM0PEPhLuNiAo&start=20&sa=N&ved=0ahUKEwjrt-6J-NjzAhUlJjQIHYRdA6EQ8NMDCK0H",
+      "other_pages": [
+        {
+          "page": 2,
+          "link": "https://www.google.com/search?q=pizza&gl=us&hl=en&tbs=vw:l,cat:499988,init_ar:SgZKBAiUwh5KClIICKylOyCxpTs%3D,ss:44&tbm=shop&ei=iQRwYavPIKXM0PEPhLuNiAo&start=20&sa=N&ved=0ahUKEwjrt-6J-NjzAhUlJjQIHYRdA6EQ8tMDCJsH"
         },
         {
-            "position": 4,
-            "block_position": "right",
-            "title": "Stretch Lightweight Jean Pants Athletic for Men by Bonobos - Medium Wash - 31X28",
-            "price": "$98.00",
-            "extracted_price": 98.0,
-            "link": "https://www.google.com/aclk?sa=l&ai=DChcSEwjc5-yLsP_sAhVM1sAKHdJ4AjQYABAEGgJpbQ&sig=AOD64_0-p6NnDfM1dm2yik_qgTS24bbB9w&ctype=5&q=&ved=2ahUKEwj3muaLsP_sAhWSLc0KHajQBb8Q5bgDegQIChB2&adurl=",
-            "source": "Bonobos",
-            "rating": 4.5,
-            "reviews": 98,
-            "thumbnail": "<URL to image>"
-        },
-        {
-            "position": 4,
-            "block_position": "right",
-            "title": "Stretch Lightweight Jean Pants Athletic for Men by Bonobos - Medium Wash - 31X28",
-            "price": "$98.00",
-            "extracted_price": 98.0,
-            "link": "https://www.google.com/aclk?sa=l&ai=DChcSEwjc5-yLsP_sAhVM1sAKHdJ4AjQYABAEGgJpbQ&sig=AOD64_0-p6NnDfM1dm2yik_qgTS24bbB9w&ctype=5&q=&ved=2ahUKEwj3muaLsP_sAhWSLc0KHajQBb8Q5bgDegQIChB2&adurl=",
-            "source": "Bonobos",
-            "rating": 4.5,
-            "reviews": 98,
-            "thumbnail": "<URL to image>"
-        },
-        {
-            "position": 4,
-            "block_position": "right",
-            "title": "Stretch Lightweight Jean Pants Athletic for Men by Bonobos - Medium Wash - 31X28",
-            "price": "$98.00",
-            "extracted_price": 98.0,
-            "link": "https://www.google.com/aclk?sa=l&ai=DChcSEwjc5-yLsP_sAhVM1sAKHdJ4AjQYABAEGgJpbQ&sig=AOD64_0-p6NnDfM1dm2yik_qgTS24bbB9w&ctype=5&q=&ved=2ahUKEwj3muaLsP_sAhWSLc0KHajQBb8Q5bgDegQIChB2&adurl=",
-            "source": "Bonobos",
-            "rating": 4.5,
-            "reviews": 98,
-            "thumbnail": "<URL to image>"
+          "page": 3,
+          "link": "https://www.google.com/search?q=pizza&gl=us&hl=en&tbs=vw:l,cat:499988,init_ar:SgZKBAiUwh5KClIICKylOyCxpTs%3D,ss:44&tbm=shop&ei=iQRwYavPIKXM0PEPhLuNiAo&start=40&sa=N&ved=0ahUKEwjrt-6J-NjzAhUlJjQIHYRdA6EQ8tMDCJ0H"
         }
-    ]
-}
+      ],
+      "api_pagination": {
+        "next": "https://api.scaleserp.com/search?api_key=APIKEY&q=pizza&location=United%20States&search_type=shopping&engine=google&page=3",
+        "other_pages": [
+          {
+            "page": 2,
+            "link": "https://api.scaleserp.com/search?api_key=APIKEY&q=pizza&location=United%20States&search_type=shopping&engine=google&page=3"
+          },
+          {
+            "page": 3,
+            "link": "https://api.scaleserp.com/search?api_key=APIKEY&q=pizza&location=United%20States&search_type=shopping&engine=google&page=5"
+          }
+        ]
+      }
+    }
+  }

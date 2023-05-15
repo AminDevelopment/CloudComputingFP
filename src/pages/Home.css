@@ -12,8 +12,10 @@
 }
 
 .subtitle {
+    display:inline-flex;
     font-style: italic;
     font-size: 2em;
+    background-color: #fafafa;
 }
 
 .searchBar {
