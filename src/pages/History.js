@@ -14,7 +14,7 @@ const History = ({cookie}) => {
         // code to fetch history 
         console.log(`in history cookie-${cookie}`)
         const fetchHistory = async() => {
-            const response = await fetch(`https://2r99wm1x58.execute-api.us-east-1.amazonaws.com/dev/dynamodbread?objID=${cookie}`
+            const response = await fetch(`https://2r99wm1x58.execute-api.us-east-1.amazonaws.com/dev/dynamodbread?objID=555`
             ,{
                 method: "GET",
                 headers: {
@@ -22,9 +22,10 @@ const History = ({cookie}) => {
                 },
             });
             const DBhistory = await response.json();
+            console.log(DBhistory);
             const newHistory = [];
             // console.log(DBhistory.history.L[0].M.search);
-            DBhistory.history.L.map((result, key) => {
+            DBhistory.History.L.map((result, key) => {
                 if (result.M?.search?.S) {
                     newHistory.push(result.M.search.S);
                 }
