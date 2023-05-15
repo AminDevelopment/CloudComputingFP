@@ -1,11 +1,11 @@
 import Container from "react-bootstrap/Container";
 import "./Home.css";
 import ChatInterface from "../components/ChatInterface";
-import { useCookies } from "react-cookie";
+// import { useCookies } from "react-cookie";
 
-const Home = () => {
-  const [cookie, setCookie] = useCookies();
-  console.log(`in homejs cookie is ${cookie.user}`)
+const Home = ({cookie}) => {
+  // const [cookie, setCookie] = useCookies();
+  // console.log(`in homejs cookie is ${cookie.user}`)
 
   return (
     <div className="main">
@@ -18,7 +18,7 @@ const Home = () => {
           <div className="d-inline-flex">
             <h2 className="py-2" style={{backgroundColor: "#fafafa"}}>Turn that idea into something more concrete</h2>
           </div>
-          <ChatInterface/>
+          <ChatInterface cookie={cookie}/>
         </div>
       </Container>
     </div>

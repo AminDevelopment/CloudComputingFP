@@ -15,7 +15,7 @@ import {
 import History from '../pages/History';
 import Home from '../pages/Home';
 
-export const HomeNavBar = () => {
+export const HomeNavBar = ({cookie}) => {
 
   return (
     <Router>
@@ -57,8 +57,8 @@ export const HomeNavBar = () => {
           </Container>
         </Navbar>
         <Routes>
-          <Route path="/history" element = {<History />} />
-          <Route path="/" element={<Home />}/>
+          <Route path="/history" element = {<History cookie={cookie} />} />
+          <Route path="/" element={<Home cookie={cookie}/>}/>
         </Routes>
       </div>
     </Router>

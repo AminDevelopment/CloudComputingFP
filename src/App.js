@@ -17,7 +17,7 @@ function App() {
 
   return (
     <CookiesProvider>
-      <HomeNavBar/>
+      <HomeNavBar cookie={cookie.user}/>
     </ CookiesProvider>
   );
 }

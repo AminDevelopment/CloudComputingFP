@@ -4,10 +4,12 @@ import Results from "./Results";
 import testJson from "../assets/test.json";
 import testAiReplay from "../assets/testAiReply.json";
 import uuid from "react-uuid";
+// import { useCookies } from "react-cookie";
 
-const ChatInterface = () => {
+const ChatInterface = ({cookie}) => {
   const [userInput, setUserInput] = useState("");
   const [messages, setMessages] = useState([]);
+  // const [cookie, setCookie] = useCookies();
 
   const [aiProduct, setAiProduct] = useState("");
   const [aiUsability, setAiUsability] = useState("");
@@ -21,6 +23,7 @@ const ChatInterface = () => {
   const handleChange = (event) => {
     setUserInput(event.target.value);
     console.log("handleChange:", event.target.value);
+    console.log(`user cookie is ${cookie}`);
   };
 
   const handleSubmit = async (event) => {
@@ -93,6 +96,16 @@ const ChatInterface = () => {
       });
       const productOverall = await responseOverall.json();
       setAiOverall(productOverall)
+
+      const writeToDB = await fetch(`https://2r99wm1x58.execute-api.us-east-1.amazonaws.com/dev/dynamodbwrite?key=${cookie}&aiResult=${encodeURIComponent(aiReply)}&search=${encodeURIComponent(userInput)}`
+      ,{
+        method: "GET",
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+      const test = await writeToDB.json();
+      console.log(`teh test result is ${test}`)
 
     } catch (error) {
       console.error(error);
