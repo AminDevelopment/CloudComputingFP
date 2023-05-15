@@ -97,7 +97,7 @@ const ChatInterface = ({cookie}) => {
       const productOverall = await responseOverall.json();
       setAiOverall(productOverall)
 
-      const writeToDB = await fetch(`https://2r99wm1x58.execute-api.us-east-1.amazonaws.com/dev/dynamodbwrite?key=555&aiResult=${encodeURIComponent(aiReply)}&search=${encodeURIComponent(userInput)}`
+      const writeToDB = await fetch(`https://2r99wm1x58.execute-api.us-east-1.amazonaws.com/dev/dynamodbwrite?key=${cookie}&aiResult=${encodeURIComponent(aiReply)}&search=${encodeURIComponent(userInput)}`
       ,{
         method: "GET",
         headers: {

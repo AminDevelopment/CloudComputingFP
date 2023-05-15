@@ -13,8 +13,9 @@ const History = ({cookie}) => {
     useEffect(() => {
         // code to fetch history 
         console.log(`in history cookie-${cookie}`)
+        console.log(typeof(cookie))
         const fetchHistory = async() => {
-            const response = await fetch(`https://2r99wm1x58.execute-api.us-east-1.amazonaws.com/dev/dynamodbread?objID=555`
+            const response = await fetch(`https://2r99wm1x58.execute-api.us-east-1.amazonaws.com/dev/dynamodbread?objID=${cookie}`
             ,{
                 method: "GET",
                 headers: {
