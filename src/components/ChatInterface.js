@@ -3,11 +3,16 @@ import styles from "./ChatInterface.module.css";
 import Results from "./Results";
 import testJson from "../assets/test.json";
 import testAiReplay from "../assets/testAiReply.json";
+import uuid from "react-uuid";
 
 const ChatInterface = () => {
   const [userInput, setUserInput] = useState("");
-  const [aiExplain, setAiExplain] = useState("");
   const [messages, setMessages] = useState([]);
+
+  const [aiProduct, setAiProduct] = useState("");
+  const [aiUsability, setAiUsability] = useState("");
+  const [aiUseCase, setAiUseCase] = useState("");
+  const [aiOverall, setAiOverall] = useState("");
 
   const apiUrl = "https://2r99wm1x58.execute-api.us-east-1.amazonaws.com/dev/openai";
 
@@ -21,21 +26,52 @@ const ChatInterface = () => {
     setMessages((prevMessages) => [...prevMessages, { type: "user", text: userInput }]);
 
     try {
-      const response = await fetch(`${apiUrl}?message=${encodeURIComponent("Find me a product related to these items: " + userInput + ". Only give me the product name")}`
+      const responseProduct = await fetch(`${apiUrl}?message=${encodeURIComponent("Find me a product related to these items: " + userInput + ". Only give me the product name")}`
       ,{
         method: "GET",
         headers: {
           'Content-Type': 'application/json',
         },
       });
-
-      const data = await response.json();
-      console.log(data)
-      const aiReply = data;
+      const product = await responseProduct.json();
+      console.log(product)
+      const aiReply = product;
+      setAiProduct(aiReply);
       setMessages((prevMessages) => [
         ...prevMessages,
         { type: "ai", text: aiReply },
       ]);
+
+      const responseUsability = await fetch(`${apiUrl}?message=${encodeURIComponent("How usable is " + aiReply + " within 10 words")}`
+      ,{
+        method: "GET",
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+      const productUsability = await responseUsability.json();
+      setAiUsability(productUsability);
+
+      const responseUseCase = await fetch(`${apiUrl}?message=${encodeURIComponent("When and how often can I use " + aiReply + " within 10 words")}`
+      ,{
+        method: "GET",
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+      const productUseCase = await responseUseCase.json();
+      setAiUseCase(productUseCase);
+
+      const responseOverall = await fetch(`${apiUrl}?message=${encodeURIComponent("Should I buy " + aiReply + " within 10 words")}`
+      ,{
+        method: "GET",
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+      const productOverall = await responseOverall.json();
+      setAiOverall(productOverall)
+
     } catch (error) {
       console.error(error);
     }
@@ -66,7 +102,12 @@ const ChatInterface = () => {
           Send
         </button>
       </form>
-      <Results aiReply={testAiReplay}/>
+      <Results 
+        aiProduct={aiProduct} 
+        aiUsability={aiUsability}
+        aiUseCase={aiUseCase} 
+        aiOverall={aiOverall} 
+      />
     </div>
     </>
   );

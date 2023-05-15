@@ -29,9 +29,11 @@
 
   .messageAi{
     text-align: right;
+    background-color: #fafafa;
   }
 
   .messageUser {
     text-align: left;
+    background-color: #fafafa;
   }
   

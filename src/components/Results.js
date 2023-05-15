@@ -9,56 +9,63 @@ import uuid from 'react-uuid';
 import { Card } from "react-bootstrap";
 import { createClient } from 'pexels';
 import { useEffect, useState } from "react";
+import "./Results.css";
+import testAi from "../assets/testAiReply.json";
 
 
-const Results = ({ aiReply }) => {
+const Results = ({ aiProduct, aiUsability, aiUseCase, aiOverall }) => {
     const [photo, setPhoto] = useState({})
-    console.log(aiReply);
+    console.log(aiProduct);
 
     useEffect(() => {
-        // const client = createClient('e2U0fJG6zHNgj6qnDe6Rb0EConhHAj3y5srcX7DFEyy8KbTIACjFX3x0 ');
-        // const query = 'Nature';
-        
-        // client.photos.search({ query, per_page: 1 }).then(photos => {setPhoto(photos.photos[0]); console.log(photos.photos[0])});
-    }, [aiReply])
+        if (aiProduct !== "") {
+            const client = createClient('e2U0fJG6zHNgj6qnDe6Rb0EConhHAj3y5srcX7DFEyy8KbTIACjFX3x0 ');
+            const query = aiProduct;
+            
+            client.photos.search({ query, per_page: 1 }).then(photos => { console.log(photos.photos[0]); setPhoto(photos.photos[0])});
+        }
+    }, [aiProduct])
 
     return (
         <Container className="py-5">
-            <h2 className="d-inline-flex pt-5 pb-3" style={{backgroundColor: '#fafafa'}}>Maybe Something like this?</h2>
-            <h1 className="pb-3" style={{backgroundColor: '#fafafa', textAlign: 'center'}}>Tester</h1>
-                <Card className="mx-auto mb-5" style={{ width: '30rem' }}>
-                    <Card.Img variant="top" src="https://images.pexels.com/photos/15286/pexels-photo.jpg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" />
-                </Card>
-            <Row xs={1} md={2} className="g-4">
-                <Col sm key={uuid()} >
-                    <Card style={{ width: '25rem' }}>
-                        <Card.Header>Usability</Card.Header>
-                        <Card.Body>
-                            <Card.Title>{"How usable is this product?"}</Card.Title>
-                            <Card.Text>{aiReply.usability || "¯\\_(ツ)_/¯"}</Card.Text>
-                        </Card.Body>
-                    </Card>
-                </ Col>
-                <Col>
-                    <Card style={{ width: '25rem' }}>
-                        <Card.Header>Use Case</Card.Header>
-                        <Card.Body>
-                            <Card.Title>{"When and how often can I use this?"}</Card.Title>
-                            <Card.Text>{aiReply.useCase || "¯\\_(ツ)_/¯"}</Card.Text>
-                        </Card.Body>
-                    </Card>
-                </Col>
-            </Row>
-            <Card className="mt-5" style={{ width: '40 rem', textAlign: 'center' }}>
-                <Card.Header>Overall</Card.Header>
-                <Card.Body>
-                    <Card.Title>{"Should I buy this?"}</Card.Title>
-                    <Card.Text>{aiReply.promote || "¯\\_(ツ)_/¯"}</Card.Text>
-                </Card.Body>
-            </Card>
+            {aiProduct == "" ? <></> : (
+                <>
+                   <h2 className="d-inline-flex pt-5 pb-3" style={{backgroundColor: '#fafafa'}}>Maybe Something like this?</h2>
+                   <h1 className="pb-3 productTitle" style={{textAlign: 'center', color: '#3D550C'}}>{aiProduct}</h1>
+                       <Card className="mx-auto mb-5" style={{ width: '30rem' }}>
+                           <Card.Img variant="top" src={photo?.src?.landscape} />
+                       </Card>
+                   <Row xs={1} lg={2} className="g-4">
+                       <Col sm >
+                           <Card style={{ width: '25rem' }}>
+                               <Card.Header>Usability</Card.Header>
+                               <Card.Body>
+                                   <Card.Title>{"How usable is this product?"}</Card.Title>
+                                   <Card.Text>{aiUsability || "¯\\_(ツ)_/¯"}</Card.Text>
+                               </Card.Body>
+                           </Card>
+                       </ Col>
+                       <Col sm key={uuid()}>
+                           <Card style={{ width: '25rem' }}>
+                               <Card.Header>Use Case</Card.Header>
+                               <Card.Body>
+                                   <Card.Title>{"When and how often can I use this?"}</Card.Title>
+                                   <Card.Text>{aiUseCase || "¯\\_(ツ)_/¯"}</Card.Text>
+                               </Card.Body>
+                           </Card>
+                       </Col>
+                   </Row>
+                   <Card className="mt-5" style={{ width: '40 rem', textAlign: 'center' }}>
+                       <Card.Header>Overall</Card.Header>
+                       <Card.Body>
+                           <Card.Title>{"Should I buy this?"}</Card.Title>
+                           <Card.Text>{aiOverall || "¯\\_(ツ)_/¯"}</Card.Text>
+                       </Card.Body>
+                   </Card> 
+                </>
+        )}
       </Container>
     );
-        
 };
 
 export default Results;

@@ -7,8 +7,6 @@ const Home = () => {
   const [cookie, setCookie] = useCookies();
   console.log(`in homejs cookie is ${cookie.user}`)
 
-  // Ask the ChatGPT should I buy it is it worth it how useful do you think it is how lifechanging would this be
-
   return (
     <div className="main">
       <Container className="pb-5">
