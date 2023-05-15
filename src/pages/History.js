@@ -27,8 +27,8 @@ const History = ({cookie}) => {
             const newHistory = [];
             // console.log(DBhistory.history.L[0].M.search);
             DBhistory.History.L.map((result, key) => {
-                if (result.M?.search?.S) {
-                    newHistory.push(result.M.search.S);
+                if (result.M?.search?.S && result.M?.ai?.S) {
+                    newHistory.push({user: result.M.search.S, ai: result.M.ai.S});
                 }
             })
             setHistory(newHistory);
@@ -45,8 +45,9 @@ const History = ({cookie}) => {
                         return (
                             <Col sm key={key} >
                                 <Card style={{ width: '16rem' }}>
+                                    <Card.Header>{result.user}</Card.Header>
                                     <Card.Body>
-                                        <Card.Title>{result}</Card.Title>
+                                        <Card.Title>{result.ai}</Card.Title>
                                     </Card.Body>
                                 </Card>
                             </Col>

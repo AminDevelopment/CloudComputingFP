@@ -47,7 +47,7 @@ export const HomeNavBar = ({cookie}) => {
                       {/* </Col>
                       <Col className="align-self-center flex-start"> */}
                         <p className="align-self-center pt-3" style={{fontWeight: 'lighter', maxWidth:'140px'}}>
-                          Global History
+                          User History
                         </p>
                       {/* </Col>
                     </Row> */}
