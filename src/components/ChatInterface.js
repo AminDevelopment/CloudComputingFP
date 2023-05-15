@@ -12,6 +12,8 @@ const ChatInterface = () => {
   const [aiProduct, setAiProduct] = useState("");
   const [aiUsability, setAiUsability] = useState("");
   const [aiUseCase, setAiUseCase] = useState("");
+  const [aiSparkJoy, setAiSparkJoy] = useState("");
+  const [aiTargetAudience, setAiTargetAudience] = useState("");
   const [aiOverall, setAiOverall] = useState("");
 
   const apiUrl = "https://2r99wm1x58.execute-api.us-east-1.amazonaws.com/dev/openai";
@@ -62,6 +64,26 @@ const ChatInterface = () => {
       const productUseCase = await responseUseCase.json();
       setAiUseCase(productUseCase);
 
+      const responseSparkJoy = await fetch(`${apiUrl}?message=${encodeURIComponent("Does " + aiReply + " spark joy, within 10 words")}`
+      ,{
+        method: "GET",
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+      const productSparkJoy = await responseSparkJoy.json();
+      setAiSparkJoy(productSparkJoy);
+
+      const responseTargetAudience = await fetch(`${apiUrl}?message=${encodeURIComponent("Who is the target audience of " + aiReply + " within 10 words")}`
+      ,{
+        method: "GET",
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+      const productTargetAudience = await responseTargetAudience.json();
+      setAiTargetAudience(productTargetAudience);
+
       const responseOverall = await fetch(`${apiUrl}?message=${encodeURIComponent("Should I buy " + aiReply + " within 10 words")}`
       ,{
         method: "GET",
@@ -106,6 +128,8 @@ const ChatInterface = () => {
         aiProduct={aiProduct} 
         aiUsability={aiUsability}
         aiUseCase={aiUseCase} 
+        aiSparkJoy={aiSparkJoy}
+        aiTargetAudience={aiTargetAudience}
         aiOverall={aiOverall} 
       />
     </div>

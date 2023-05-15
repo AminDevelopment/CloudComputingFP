@@ -10,7 +10,26 @@ const History = () => {
     const [history, setHistory] = useState([]);
     useEffect(() => {
         // code to fetch history 
-        setHistory(testJson.results);
+        const fetchHistory = async() => {
+            const response = await fetch(`https://2r99wm1x58.execute-api.us-east-1.amazonaws.com/dev/dynamodbread?objID=key23`
+            ,{
+                method: "GET",
+                headers: {
+                'Content-Type': 'application/json',
+                },
+            });
+            const DBhistory = await response.json();
+            const newHistory = [];
+            // console.log(DBhistory.history.L[0].M.search);
+            DBhistory.history.L.map((result, key) => {
+                if (result.M?.search?.S) {
+                    newHistory.push(result.M.search.S);
+                }
+            })
+            setHistory(newHistory);
+            console.log(newHistory);
+        }
+        fetchHistory();
     }, []);
 
     return (

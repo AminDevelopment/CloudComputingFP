@@ -13,7 +13,7 @@ import "./Results.css";
 import testAi from "../assets/testAiReply.json";
 
 
-const Results = ({ aiProduct, aiUsability, aiUseCase, aiOverall }) => {
+const Results = ({ aiProduct, aiUsability, aiUseCase, aiSparkJoy, aiTargetAudience, aiOverall }) => {
     const [photo, setPhoto] = useState({})
     console.log(aiProduct);
 
@@ -35,7 +35,7 @@ const Results = ({ aiProduct, aiUsability, aiUseCase, aiOverall }) => {
                        <Card className="mx-auto mb-5" style={{ width: '30rem' }}>
                            <Card.Img variant="top" src={photo?.src?.landscape} />
                        </Card>
-                   <Row xs={1} lg={2} className="g-4">
+                   <Row xs={1} lg={2} className="g-4 d-flex" style={{justifyContent: 'center'}}>
                        <Col sm >
                            <Card style={{ width: '25rem' }}>
                                <Card.Header>Usability</Card.Header>
@@ -45,12 +45,30 @@ const Results = ({ aiProduct, aiUsability, aiUseCase, aiOverall }) => {
                                </Card.Body>
                            </Card>
                        </ Col>
-                       <Col sm key={uuid()}>
+                       <Col sm >
                            <Card style={{ width: '25rem' }}>
                                <Card.Header>Use Case</Card.Header>
                                <Card.Body>
                                    <Card.Title>{"When and how often can I use this?"}</Card.Title>
                                    <Card.Text>{aiUseCase || "¯\\_(ツ)_/¯"}</Card.Text>
+                               </Card.Body>
+                           </Card>
+                       </Col>
+                       <Col sm >
+                           <Card style={{ width: '25rem' }}>
+                               <Card.Header>Spark Joy</Card.Header>
+                               <Card.Body>
+                                   <Card.Title>{"Does this spark joy?"}</Card.Title>
+                                   <Card.Text>{aiSparkJoy || "¯\\_(ツ)_/¯"}</Card.Text>
+                               </Card.Body>
+                           </Card>
+                       </Col>
+                       <Col sm >
+                           <Card style={{ width: '25rem' }}>
+                               <Card.Header>Target Audience</Card.Header>
+                               <Card.Body>
+                                   <Card.Title>{"Who uses them?"}</Card.Title>
+                                   <Card.Text>{aiTargetAudience || "¯\\_(ツ)_/¯"}</Card.Text>
                                </Card.Body>
                            </Card>
                        </Col>
